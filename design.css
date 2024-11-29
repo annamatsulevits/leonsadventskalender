@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.calendar-container {
+  position: relative;
+  width: 100%;
+  height: 600px; /* Adjust based on your image size */
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.clickable-box {
+  position: absolute;
+  width: 50px;  /* Adjust the size of each clickable box */
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0); /* Invisible */
+  cursor: pointer;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+#downloadBtn {
+  margin-top: 20px;
+}

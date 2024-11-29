@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advent Calendar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="calendar-container">
+    <img src="your-background-image.jpg" alt="Advent Calendar" class="background-image">
+    
+    <!-- Invisible clickable boxes -->
+    <div class="clickable-box" style="top: 50px; left: 100px;" data-day="1"></div>
+    <div class="clickable-box" style="top: 100px; left: 200px;" data-day="2"></div>
+    <!-- Add more boxes as needed -->
+
+  </div>
+
+  <!-- Pop-up Modal -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <h2>Answer the Question</h2>
+      <input type="text" id="answer">
+      <button onclick="checkAnswer()">Submit</button>
+      <button id="downloadBtn" style="display: none;" onclick="downloadImage()">Download PNG</button>
+      <button onclick="closePopup()">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
